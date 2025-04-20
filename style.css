@@ -4,30 +4,27 @@
 
 /* Default: pixel font for everything */
 body {
-    background-image: url('pixel\ pic\ purple.png'); /* use your actual path */
+    background-image: url('assets/bg.webp'); /* use your actual path */
     background-repeat: no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
-    font-family: 'Press Start 2P', monospace;
+    /* Modern font ONLY for long text blocks */
+    font-family: 'Bricolage Grotesque', sans-serif;
     margin: 0;
     padding: 0;
     display: flex;
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    color: #f1f1f1;
+    color: white;
     width: 100vw;
 }
 
-/* Modern font ONLY for long text blocks */
-p {
-    font-family: 'Bricolage Grotesque', sans-serif;
-}
 
 /* Pixel font for headings, navigation, buttons, labels and footer */
-h1, h2, h3, nav ul li a, button, .label, footer, footer * {
-    font-family: 'Press Start 2P', monospace !important;
+h1, h2, h3, button, .label, footer, footer * {
+    font-family: 'Press Start 2P', monospace;
 }
 
 /* Header styles */
@@ -43,6 +40,11 @@ header {
     flex-wrap: wrap;
     box-sizing: border-box;
     overflow: hidden;
+}
+
+header nav ul li a {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.9rem;
 }
 
 /* Logo or title area */
@@ -72,7 +74,6 @@ header {
         display: flex;
         justify-content: center;
         flex-wrap: wrap;
-        gap: 15px;
         padding: 0;
         margin: 0;
         list-style: none;
@@ -89,7 +90,7 @@ header {
 nav ul {
     display: flex;
     justify-content: center;
-    gap: 15px;
+    gap: 2.8rem;
     list-style: none;
     padding: 0;
     margin: 0;
@@ -120,30 +121,22 @@ main {
     align-items: center;
     width: 100%;
     max-width: 1200px;
-    padding: 5% 5%;
+    padding: 0 5%;
     justify-content: center;
     flex-wrap: wrap;
-}
-
-.section {
-    background: #006D5A;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
-    flex: 1 1 20%;
-    text-align: left;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    filter: url(#pixelate);
 }
 
 .section-container section {
     flex: 1;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    justify-content: flex-start;
     padding: 24px;
     box-sizing: border-box;
+}
+
+.section-container section.space-between {
+    justify-content: space-between;
 }
 
 .section-container {
@@ -157,24 +150,12 @@ main {
     align-items: stretch;
 }
 
-section {
-    background: #006D5A;
-    padding: 40px;
-    border-radius: 16px;
-    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
-    flex: 1 1 20%;
-    text-align: left;
-    margin-bottom: 40px;
-    box-sizing: border-box;
-    justify-content: space-evenly;
-}
 
 .image-container {
     display: flex;
     justify-content: center;
     gap: 40px;
     flex-wrap: wrap;
-    margin-top: 40px;
     width: 100%;
 }
 
@@ -223,17 +204,12 @@ main section {
     border-radius: 16px;
     box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
     flex: 1 1 45%;
-    text-align: left;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    margin-bottom: 40px;
     transition: transform 0.3s ease;
-}
-
-main section:hover {
-    transform: scale(1.01);
+    margin: 40px 0;
 }
 
 @media (max-width: 768px) {
@@ -251,7 +227,7 @@ main section:hover {
 /* Typography */
 h1, h2, h3 {
     text-align: left;
-    color: #f1f1f1;
+    color: #80C7A5;
 }
 
 h1 {
@@ -260,7 +236,6 @@ h1 {
 
 h2 {
     font-size: 1.8rem;
-    color: #80C7A5;
 }
 
 h3 {
@@ -269,8 +244,6 @@ h3 {
 
 p {
     font-size: 1.1rem;
-    color: #ccc;
-    text-align: left;
 }
 
 /* Footer Styles */
@@ -280,10 +253,23 @@ footer {
     background: rgba(23, 36, 35, 0.9);
     width: 100%;
     box-shadow: 2px 2px 15px rgba(0, 0, 0, 0.3);
-    color: #f1f1f1;
     justify-content: space-evenly;
     text-align: center;
     display: flex;
     align-items: center;
     flex-wrap: wrap;
+}
+
+
+a {
+    color: #00FFF7;
+}
+
+a:hover {
+    text-decoration: none;
+}
+
+ul {
+    list-style-image: url('assets/tree.png');
+    line-height: 1.7;
 }
