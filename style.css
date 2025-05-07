@@ -273,3 +273,389 @@ ul {
     list-style-image: url('assets/tree.png');
     line-height: 1.7;
 }
+
+.feedback-button {
+    display: block;
+    margin: 2rem auto 0 auto; /* top margin + auto centering */
+    padding: 0.6rem 1.2rem;
+    background-color: #80C7A5;
+    color: #1a1a1a;
+    text-decoration: none;
+    border: 2px solid #00FFF8;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    text-align: center;
+    max-width: fit-content;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.feedback-button:hover {
+    background-color: #00FFF8;
+    color: #000;
+    transform: scale(1.05);
+}
+form {
+    background: rgba(0, 109, 90, 0.9); /* match your section background */
+    padding: 2rem;
+    border-radius: 16px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.3);
+    max-width: 600px;
+    margin: 2rem auto;
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+form label {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    margin-bottom: 0.3rem;
+    color: #80C7A5;
+}
+
+form input[type="text"],
+form input[type="email"],
+form textarea {
+    padding: 0.8rem 1rem;
+    font-size: 1rem;
+    border-radius: 8px;
+    border: none;
+    outline: none;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    background-color: #f0f0f0;
+    color: #000;
+}
+
+form textarea {
+    resize: vertical;
+    min-height: 100px;
+}
+
+form button,
+form input[type="submit"] {
+    align-self: flex-start;
+    padding: 0.6rem 1.2rem;
+    background-color: #80C7A5;
+    color: #1a1a1a;
+    border: 2px solid #00FFF8;
+    border-radius: 10px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+form button:hover,
+form input[type="submit"]:hover {
+    background-color: #00FFF8;
+    color: #000;
+    transform: scale(1.05);
+}
+#feedback-form {
+    width: 100%;
+    max-width: 600px;
+    margin: 0 auto;
+    background-color: #006D5A;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 4px 4px 20px rgba(0, 0, 0, 0.4);
+}
+
+#feedback-form form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+#feedback-form input,
+#feedback-form textarea,
+#feedback-form select {
+    width: 100%;
+    padding: 12px;
+    border-radius: 8px;
+    border: none;
+    font-size: 1rem;
+    font-family: 'Bricolage Grotesque', sans-serif;
+    box-sizing: border-box;
+}
+
+#feedback-form button {
+    padding: 14px 28px;
+    background-color: #9540FF;
+    color: white;
+    font-size: 1rem;
+    cursor: pointer;
+    border: none;
+    border-radius: 10px;
+    transition: background-color 0.3s ease;
+}
+
+#feedback-form button:hover {
+    background-color: #7c2ce0;
+}
+
+/* Gallery Grid Styling */
+#gallery-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 32px;
+    padding: 60px 5%;
+    width: 100%;
+    max-width: 1400px;
+    margin: auto;
+    background-color: #f0f0f0; /* Light background color */
+    border-radius: 10px; /* Rounded corners for the entire gallery section */
+}
+
+.gallery-item {
+    overflow: hidden;
+    border-radius: 16px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.4);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    cursor: pointer; /* Make images clickable */
+}
+
+.gallery-item img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    border-radius: 16px;
+    transition: transform 0.3s ease;
+}
+
+/* Hover Effects for Image */
+.gallery-item:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.6);
+}
+
+.gallery-item img:hover {
+    transform: scale(1.05);
+}
+
+/* Modal Styling */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Fixed in place */
+    z-index: 9999; /* On top of everything */
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.modal img {
+    max-width: 90%;
+    max-height: 90%;
+    margin: auto;
+    display: block;
+}
+
+.close-btn {
+    position: absolute;
+    top: 20px;
+    right: 20px;
+    color: white;
+    font-size: 2rem;
+    font-weight: bold;
+    background: none;
+    border: none;
+    cursor: pointer;
+    transition: color 0.3s ease;
+}
+
+.close-btn:hover {
+    color: #9540FF; /* Optional: Change color on hover */
+}
+
+/* Centered Header Styling */
+header h1 {
+    text-align: center;
+    font-size: 2.4rem;
+    color: #80C7A5;
+    margin-bottom: 8px;
+    font-family: 'Press Start 2P', monospace;
+}
+
+/* Back Button Styling */
+.back-button {
+    display: block;
+    text-align: center;
+    margin: 12px auto 0;
+    font-family: 'Press Start 2P', monospace;
+    color: #00FFF8;
+    text-decoration: none;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+}
+
+.back-button:hover {
+    color: #9540FF;
+    border-bottom: 2px solid #9540FF;
+}
+
+#gallery-preview {
+    padding: 40px 5%;
+    background-color: #80C7A5;
+    border-radius: 12px;
+    margin-top: 40px;
+    color: #1a1a1a;
+}
+
+.gallery-preview-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    margin-bottom: 24px;
+}
+
+.gallery-preview-header h2 {
+    margin: 0;
+    color: #ffffff;
+    font-size: 1.4rem;
+    font-family: 'Press Start 2P', monospace;
+}
+
+.view-gallery-button {
+    padding: 10px 16px;
+    background-color: #ffffff;
+    color: #9540FF;
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.7rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.view-gallery-button:hover {
+    background-color: #9540FF;
+    color: #ffffff;
+}
+
+.gallery-preview-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 24px;
+    justify-items: center;
+}
+
+.gallery-preview-grid img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 12px;
+    box-shadow: 0 6px 18px rgba(0, 0, 0, 0.3);
+    transition: transform 0.3s ease;
+}
+/* Responsive layout fix for gallery preview */
+@media (max-width: 768px) {
+    .gallery-preview-header {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+    }
+
+    .view-gallery-button {
+        align-self: flex-start;
+        margin-top: 24px;
+    }
+}
+.preview-button-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .view-gallery-button {
+    padding: 10px 20px;
+    background-color: #9540FF;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .view-gallery-button:hover {
+    background-color: #7a2fd6;
+  }
+  
+  #gallery-preview h2 {
+    font-size: 2rem;  /* Adjust as needed */
+    text-align: center;  /* Center the title */
+    margin-bottom: 20px;  /* Space below the title */
+    color: rgba(0, 109, 90, 0.9);  /* Ensure the text is a readable color */
+    font-weight: bold;
+}
+
+#gallery-preview {
+    display: block;  /* Ensure the section is taking up full space */
+    padding: 20px 20px;  /* Add some padding for spacing */
+}
+
+.preview-button-wrapper {
+    margin-top: 24px;
+    display: flex;
+    justify-content: center;
+}
+
+.view-gallery-button {
+    padding: 10px 20px;
+    background-color: #9540FF;
+    color: white;
+    text-decoration: none;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.8rem;
+    border-radius: 8px;
+    transition: background-color 0.3s ease;
+}
+
+.view-gallery-button:hover {
+    background-color: #7a2fd6;
+}
+.image-container img {
+    max-width: 25%; /* Adjust percentage to desired size */
+    height: auto; /* Maintain aspect ratio */
+}
+/* Back to Top Button Styles */
+.back-to-top {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    background-color: #9540FF;  /* Background color */
+    color: white;  /* Text color */
+    padding: 10px 20px;
+    border-radius: 50%;
+    font-size: 1.5rem;
+    text-decoration: none;
+    display: none;  /* Hide by default */
+    text-align: center;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-to-top:hover {
+    background-color: #7c2ce0;  /* Darker color on hover */
+    transform: scale(1.1);
+}
+
+.back-to-top:active {
+    transform: scale(0.95);  /* Slight scale down effect when clicked */
+}
+.back-to-top {
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+.back-to-top.show {
+    opacity: 1;
+}
