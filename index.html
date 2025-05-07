@@ -168,25 +168,34 @@
 
     </footer>
     <!-- Back to Top Button -->
-    <a href="#" class="back-to-top" id="back-to-top">↑ Back to Top</a>
+    <div class="btn-up btn-up_hide"></div>
     <script>
-        // Get the button
-        var mybutton = document.getElementById("back-to-top");
-    
-        // When the user scrolls down 100px from the top of the document, show the button
-        window.onscroll = function() {
-            if (document.body.scrollTop > 100 || document.documentElement.scrollTop > 100) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
+        const btnUp = {
+          el: document.querySelector(".btn-up"),
+          show() {
+            this.el.classList.remove("btn-up_hide");
+          },
+          hide() {
+            this.el.classList.add("btn-up_hide");
+          },
+          addEventListener() {
+            window.addEventListener("scroll", () => {
+              const scrollY =
+                window.scrollY || document.documentElement.scrollTop;
+              scrollY > 400 ? this.show() : this.hide();
+            });
+            document.querySelector(".btn-up").onclick = () => {
+              window.scrollTo({
+                top: 0,
+                left: 0,
+                behavior: "smooth",
+              });
+            };
+          },
         };
-    
-        // When the user clicks on the button, scroll to the top of the document
-        mybutton.onclick = function() {
-            window.scrollTo({top: 0, behavior: 'smooth'});
-        };
-    </script>
+  
+        btnUp.addEventListener();
+      </script>
     
 </body>
 </html>
