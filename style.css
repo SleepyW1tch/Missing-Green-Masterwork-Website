@@ -212,6 +212,11 @@ main section {
     margin: 40px 0;
 }
 
+.project-description {
+    background: #80C7A5;
+
+}
+
 @media (max-width: 768px) {
     .section-container {
         flex-direction: column;
