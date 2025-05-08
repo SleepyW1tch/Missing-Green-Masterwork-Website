@@ -17,7 +17,7 @@ body {
     flex-direction: column;
     align-items: center;
     overflow-x: hidden;
-    color: white;
+    color: #f1f1f1;
     width: 100vw;
 }
 
@@ -284,7 +284,7 @@ ul {
     margin: 2rem auto 0 auto; /* top margin + auto centering */
     padding: 0.6rem 1.2rem;
     background-color: #80C7A5;
-    color: #1a1a1a;
+    color: rgba(23, 36, 35, 0.9);
     text-decoration: none;
     border: 2px solid #00FFF8;
     border-radius: 10px;
@@ -297,7 +297,7 @@ ul {
 
 .feedback-button:hover {
     background-color: #00FFF8;
-    color: #000;
+    color: rgba(23, 36, 35, 0.9);
     transform: scale(1.05);
 }
 form {
@@ -329,8 +329,8 @@ form textarea {
     border: none;
     outline: none;
     font-family: 'Bricolage Grotesque', sans-serif;
-    background-color: #f0f0f0;
-    color: #000;
+    background-color: #f1f1f1;
+    color: rgba(23, 36, 35, 0.9);
 }
 
 form textarea {
@@ -343,7 +343,7 @@ form input[type="submit"] {
     align-self: flex-start;
     padding: 0.6rem 1.2rem;
     background-color: #80C7A5;
-    color: #1a1a1a;
+    color: rgba(23, 36, 35, 0.9);
     border: 2px solid #00FFF8;
     border-radius: 10px;
     font-family: 'Press Start 2P', monospace;
@@ -355,7 +355,7 @@ form input[type="submit"] {
 form button:hover,
 form input[type="submit"]:hover {
     background-color: #00FFF8;
-    color: #000;
+    color: rgba(23, 36, 35, 0.9);
     transform: scale(1.05);
 }
 #feedback-form {
@@ -389,7 +389,7 @@ form input[type="submit"]:hover {
 #feedback-form button {
     padding: 14px 28px;
     background-color: #9540FF;
-    color: white;
+    color: #f1f1f1;
     font-size: 1rem;
     cursor: pointer;
     border: none;
@@ -410,7 +410,7 @@ form input[type="submit"]:hover {
     width: 100%;
     max-width: 1400px;
     margin: auto;
-    background-color: #f0f0f0; /* Light background color */
+    background-color: #9540FF; /* Light background color */
     border-radius: 10px; /* Rounded corners for the entire gallery section */
 }
 
@@ -450,7 +450,7 @@ form input[type="submit"]:hover {
     top: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, 0.8); /* Black background with transparency */
+    background-color:rgba(23, 36, 35, 0.9); /* Black background with transparency */
     justify-content: center;
     align-items: center;
     padding: 20px;
@@ -467,7 +467,7 @@ form input[type="submit"]:hover {
     position: absolute;
     top: 20px;
     right: 20px;
-    color: white;
+    color: #f1f1f1;
     font-size: 2rem;
     font-weight: bold;
     background: none;
@@ -511,7 +511,7 @@ header h1 {
     background-color: #80C7A5;
     border-radius: 12px;
     margin-top: 40px;
-    color: #1a1a1a;
+    color: rgba(23, 36, 35, 0.9);
 }
 
 .gallery-preview-header {
@@ -531,7 +531,7 @@ header h1 {
 
 .view-gallery-button {
     padding: 10px 16px;
-    background-color: #ffffff;
+    background-color: #f1f1f1;
     color: #9540FF;
     text-decoration: none;
     font-family: 'Press Start 2P', monospace;
@@ -542,7 +542,7 @@ header h1 {
 
 .view-gallery-button:hover {
     background-color: #9540FF;
-    color: #ffffff;
+    color: #f1f1f1;
 }
 
 .gallery-preview-grid {
@@ -582,7 +582,7 @@ header h1 {
   .view-gallery-button {
     padding: 10px 20px;
     background-color: #9540FF;
-    color: white;
+    color: #f1f1f1;
     text-decoration: none;
     font-family: 'Press Start 2P', monospace;
     font-size: 0.8rem;
@@ -616,7 +616,7 @@ header h1 {
 .view-gallery-button {
     padding: 10px 20px;
     background-color: #9540FF;
-    color: white;
+    color: #f1f1f1;
     text-decoration: none;
     font-family: 'Press Start 2P', monospace;
     font-size: 0.8rem;
@@ -637,7 +637,7 @@ header h1 {
     bottom: 20px;
     right: 20px;
     background-color: #9540FF;  /* Background color */
-    color: white;  /* Text color */
+    color: #f1f1f1;  /* Text color */
     padding: 10px 20px;
     border-radius: 50%;
     font-size: 1.5rem;
