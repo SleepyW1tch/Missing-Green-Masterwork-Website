@@ -230,26 +230,44 @@ main section {
 }
 
 /* Typography */
-h1, h2, h3 {
-    text-align: left;
+h1, h2 {
+    text-align: center;
     color: #80C7A5;
 }
 
+h3 {
+    text-align: center;
+    color: #172423;
+}
+
 h1 {
-    font-size: 2rem;
+    font-size: clamp(1.4rem, 4vw, 2.4rem);
 }
 
 h2 {
-    font-size: 1.8rem;
+    font-size: clamp(1.2rem, 3.5vw, 2rem);
 }
 
+
 h3 {
-    font-size: 1.6rem;
+    font-size: 1.2rem;
 }
 
 p {
     font-size: 1.1rem;
+    text-align: left;
+
+        white-space: normal;
+        overflow-wrap: break-word;
+        word-break: break-word;
+
 }
+
+@media (max-width: 600px) {
+    p {
+      padding: 0 1rem;
+    }
+  }
 
 /* Footer Styles */
 footer {
@@ -698,4 +716,18 @@ header h1 {
     }
   }
 
+  @media (max-width: 768px) {
+    nav ul {
+        gap: 1.2rem; /* More appropriate spacing on mobile */
+    }
+    nav ul li a {
+        font-size: 0.9rem;
+    }
+}
+
+@media (max-width: 600px) {
+    .image-container img {
+        max-width: 90%; /* Better mobile layout */
+    }
+}
 
