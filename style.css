@@ -731,3 +731,13 @@ header h1 {
     }
 }
 
+.header-left img {
+  width: 200px;
+  height: auto;
+}
+
+@media (max-width: 768px) {
+  .header-left img {
+    width: 200px;
+  }
+}
