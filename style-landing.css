@@ -741,3 +741,16 @@ header h1 {
     width: 200px;
   }
 }
+.accusation-container p {
+  hyphens: auto;
+  overflow-wrap: break-word;
+  word-break: normal; /* use default breaking rules */
+}
+p {
+    font-size: 1.1rem;
+    text-align: left;
+    white-space: normal;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    hyphens: auto;
+}
