@@ -741,3 +741,11 @@ header h1 {
     width: 200px;
   }
 }
+.image-content img {
+  max-width: 200px; /* adjust this value as needed */
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  display: block;
+  margin: 0 auto;
+}
